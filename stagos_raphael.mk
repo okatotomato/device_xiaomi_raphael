@@ -6,8 +6,8 @@
 
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common Revengeos stuff.
-$(call inherit-product, vendor/revengeos/config/common.mk)
+# Inherit some common stagos stuff.
+$(call inherit-product, vendor/stagos/config/common.mk)
 
 # Inherit from ANXCamera vendor.
 $(call inherit-product, vendor/ANXCamera/config.mk)
@@ -19,14 +19,14 @@ TARGET_GAPPS_ARCH := arm64
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := raphael
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := revengeos_raphael
+PRODUCT_NAME := stagos_raphael
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# RevengeOS stuff.
-REVENGEOS_BUILD_TYPE := UNOFFICIAL
+# stagos stuff.
+stagos_BUILD_TYPE := UNOFFICIAL
 EXTRA_FOD_ANIMATIONS := true
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.revengeos.maintainer=nayspl
+    ro.stagos.maintainer=nayspl
