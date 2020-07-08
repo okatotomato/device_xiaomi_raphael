@@ -6,8 +6,8 @@
 
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common stagos stuff.
-$(call inherit-product, vendor/stagos/config/common.mk)
+# Inherit some common stag stuff.
+$(call inherit-product, vendor/stag/config/common.mk)
 
 # Inherit from ANXCamera vendor.
 $(call inherit-product, vendor/ANXCamera/config.mk)
@@ -19,14 +19,14 @@ TARGET_GAPPS_ARCH := arm64
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := raphael
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := stagos_raphael
+PRODUCT_NAME := stag_raphael
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# stagos stuff.
-stagos_BUILD_TYPE := UNOFFICIAL
+# stag stuff.
+stag_BUILD_TYPE := UNOFFICIAL
 EXTRA_FOD_ANIMATIONS := true
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.stagos.maintainer=nayspl
+    ro.stag.maintainer=nayspl

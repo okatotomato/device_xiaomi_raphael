@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/stagos_raphael.mk
+    $(LOCAL_DIR)/stag_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    stagos_raphael-user \
-    stagos_raphael-userdebug \
-    stagos_raphael-eng
+    stag_raphael-user \
+    stag_raphael-userdebug \
+    stag_raphael-eng

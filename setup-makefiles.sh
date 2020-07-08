@@ -16,9 +16,9 @@ INITIAL_COPYRIGHT_YEAR=2019
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-stagos_ROOT="${MY_DIR}/../../.."
+stag_ROOT="${MY_DIR}/../../.."
 
-HELPER="${stagos_ROOT}/vendor/superior/build/tools/extract_utils.sh"
+HELPER="${stag_ROOT}/vendor/superior/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -26,7 +26,7 @@ fi
 source "${HELPER}"
 
 # Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${stagos_ROOT}"
+setup_vendor "${DEVICE}" "${VENDOR}" "${stag_ROOT}"
 
 # Copyright headers and guards
 write_headers
